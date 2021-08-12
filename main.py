@@ -296,7 +296,7 @@ def push_wx(desp=""):
 #             "text": '【小米运动步数修改】',
 #             "desp": desp
 #         }
-        response = requests.get(server_url, params=params).text
+        response = requests.get(server_url).text
         print(response)
 
 
