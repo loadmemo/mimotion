@@ -286,17 +286,16 @@ def push(title, content):
         print(res)
 
 
-# 推送server
+# 推送bark
 def push_wx(desp=""):
     if sckey == 'NO':
         return
     else:
-        server_url = f"https://sc.ftqq.com/{sckey}.send"
-        params = {
-            "text": '【小米运动步数修改】',
-            "desp": desp
-        }
-
+        server_url = f"https://api.day.app/{sckey}/【小米运动步数修改】/{desp}"
+#         params = {
+#             "text": '【小米运动步数修改】',
+#             "desp": desp
+#         }
         response = requests.get(server_url, params=params).text
         print(response)
 
