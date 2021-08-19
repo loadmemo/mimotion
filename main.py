@@ -291,7 +291,7 @@ def push_wx(desp=""):
     if sckey == 'NO':
         return
     else:
-        server_url = f"https://api.day.app/{sckey}/【小米运动步数修改】/{desp}"
+        server_url = f"https://api.day.app/{sckey}/【小米运动步数修改】/{desp}?group=steps"
 #         params = {
 #             "text": '【小米运动步数修改】',
 #             "desp": desp
